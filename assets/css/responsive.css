@@ -1,0 +1,186 @@
+/*above 1200 main style will work which area 1000px  */
+
+/* Checking Size: 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .area {
+    width: 970px;
+  }
+  .menu {
+    width: 660px;
+  }
+
+  .single_service {
+    width: 303px;
+  }
+
+  .about_left {
+    width: 670px;
+  }
+
+  /* service page */
+  .service_page .single_service {
+    width: 303px;
+  }
+  .service_page .single_service:last-child,
+  .service_page .single_service:nth-child(3),
+  .service_page .single_service:nth-child(6) {
+    margin-right: 0;
+  }
+
+  .service_page .single_service:nth-child(4) {
+    margin-right: 30px;
+  }
+
+  /* gallery page */
+  .single_gallery {
+    width: 227px;
+  }
+
+  /* contact page */
+  .contact_form {
+    width: 670px;
+  }
+}
+
+/* Checking Size: 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .area {
+    width: 740px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .menu ul li {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  .single_service {
+    width: 226px;
+  }
+  .about_left {
+    width: 450px;
+  }
+  .about_menu {
+    width: 260px;
+  }
+
+  /* service page */
+  .service_page .single_service {
+    width: 355px;
+  }
+
+  .service_page .single_service:last-child,
+  .service_page .single_service:nth-child(even) {
+    margin-right: 0;
+  }
+
+  /* gallery page */
+  .single_gallery {
+    width: 360px;
+  }
+
+  .single_gallery:last-child,
+  .single_gallery:nth-child(even) {
+    margin-right: 0;
+  }
+
+  /* contact page */
+  .contact_form {
+    width: 100%;
+    margin-right: 0;
+  }
+  .contact_address h4 {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  .contact_address {
+    width: auto;
+  }
+}
+
+/* Checking Size: 400px */
+@media only screen and (max-width: 767px) {
+  .area {
+    width: 320px;
+  }
+
+  .logo {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu ul li {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .service_area .title h3 {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .single_service {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about_area {
+    margin-top: 20px;
+  }
+  .about_left {
+    width: 100%;
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  .about_menu {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .about_menu h4 {
+    margin-bottom: 6px;
+    margin-top: 50px;
+  }
+
+  /* service page */
+  .service_page .single_service {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  /* gallery page */
+  .single_gallery {
+    width: 100%;
+    margin-right: 0;
+  }
+  .page_banner h4 {
+    font-size: 40px;
+  }
+
+  /* contact page */
+  .contact_form {
+    width: 100%;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+
+  .contact_address {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .area {
+    width: 450px;
+  }
+}

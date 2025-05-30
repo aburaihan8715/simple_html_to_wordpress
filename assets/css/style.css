@@ -1,0 +1,493 @@
+/* =============
+RESET CSS
+=================*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sniglet&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sniglet", system-ui;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.area {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+:root {
+  --primary_color: #008080;
+  --secondary_color: #ff6347;
+  --secondary_color_shade_1: #b83119;
+  --black_color: #000;
+  --black_color_tint_1: #220022;
+  --white_color: #fff;
+}
+/* ==============
+COMMON CSS
+=================*/
+.clear_fix::after,
+.clear_fix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fill_btn {
+  display: inline-block;
+  background: var(--secondary_color);
+  padding: 10px 20px;
+  color: var(--white_color);
+  font-size: 18px;
+  font-style: italic;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+.fill_btn:hover {
+  background: var(--secondary_color_shade_1);
+}
+
+/* ==========
+1. HOME PAGE
+============== */
+/* ===============
+HEADER
+=================*/
+
+.menu_bar {
+  background-color: #dddddd;
+  padding: 20px;
+}
+.logo {
+  width: 250px;
+  float: left;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.menu {
+  float: right;
+  width: 690px;
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: 0.5s;
+  color: var(--black_color_tint_1);
+}
+
+.menu ul li a:hover {
+  background-color: var(--secondary_color);
+  color: var(--white_color);
+}
+
+/* =================
+BANNER CSS
+===================*/
+
+.carousel_item img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+/* ==============
+SERVICES CSS
+=================*/
+
+.service_area .title h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: var(--black_color);
+  margin: 40px 0;
+}
+
+.single_service {
+  width: 313px;
+  background: var(--primary_color);
+  padding: 20px;
+  float: left;
+  margin-right: 30px;
+}
+
+.single_service:last-child {
+  margin-right: 0;
+}
+
+.single_service h4 {
+  font-size: 30px;
+  color: var(--white_color);
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.single_service p {
+  color: var(--white_color);
+  font-size: 14px;
+}
+.single_service .link {
+  margin-top: 20px;
+}
+
+/* ===============
+blog css
+================*/
+.blogs_area {
+  margin-top: 60px;
+}
+
+.single_blog {
+  width: 320px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.single_blog:last-child {
+  margin-right: 0;
+}
+
+.single_blog h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.single_blog img {
+  border: 1px solid lightgray;
+  padding: 3px;
+}
+
+.single_blog p {
+  margin: 10px 0px;
+}
+
+.blog_meta a {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: capitalize;
+  color: #333;
+}
+.sidebar {
+  width: 270px;
+  float: right;
+}
+
+.latest_blogs {
+  width: 700px;
+  float: left;
+  margin-right: 30px;
+}
+
+.blogs {
+  margin-top: 30px;
+}
+
+.latest_blogs h2,
+.sidebar h2,
+.page_left h2 {
+  font-size: 30px;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightblue;
+  padding-bottom: 10px;
+}
+
+.single_sidebar {
+  margin-bottom: 20px;
+}
+
+.single_sidebar ul li {
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: -5px 10px;
+  padding: 10px 27px;
+  border-bottom: 1px solid lightgray;
+}
+
+.single_sidebar ul li:last-child {
+  border-bottom: 0;
+}
+
+.single_sidebar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--black_color_tint_1);
+  transition: 0.3s;
+  font-weight: 500;
+}
+.single_sidebar ul li a:hover {
+  color: var(--secondary_color);
+}
+
+/* ==================
+FOOTER
+====================*/
+
+.footer_area {
+  background: var(--primary_color);
+  color: var(--white_color);
+  padding: 20px 0;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.footer_area p {
+  text-align: center;
+}
+
+/* ==========
+2. ABOUT PAGE
+============== */
+
+.about_area {
+  margin-top: 70px;
+}
+.about {
+  float: left;
+  width: 700px;
+  margin-right: 30px;
+}
+.about h4 {
+  font-size: 36px;
+  color: var(--black_color_tint_1);
+  margin-bottom: 26px;
+  text-transform: capitalize;
+}
+.about p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.about .link {
+  margin-top: 30px;
+}
+
+.page_banner {
+  padding: 120px 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.page_banner::before {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+.page_banner h4 {
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--white_color);
+}
+
+/* ==========
+3. SERVICE PAGE
+============== */
+.service_page .single_service {
+  width: 227px;
+  margin-top: 26px;
+}
+.service_page .single_service:last-child,
+.service_page .single_service:nth-child(4) {
+  margin-right: 0;
+}
+
+/* ==========
+4. GALLERY PAGE
+============== */
+
+.single_gallery {
+  float: left;
+  width: 235px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.single_gallery iframe {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 2px;
+}
+
+.single_gallery:last-child,
+.single_gallery:nth-child(4) {
+  margin-right: 0;
+}
+
+/* ==========
+5. CONTACT PAGE
+============== */
+
+.contact {
+  padding: 50px 0;
+}
+.contact_form {
+  float: left;
+  width: 700px;
+  margin-right: 30px;
+}
+.contact_form h4 {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+  outline: 1px solid var(--primary_color);
+}
+.contact_form textarea {
+  height: 150px;
+  font-family: inherit;
+}
+
+.contact_form input[type="submit"] {
+  background: var(--secondary_color);
+  width: auto;
+  padding: 12px 40px;
+  display: inline-block;
+  font-size: 18px;
+  color: var(--white_color);
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact_form input[type="submit"]:hover {
+  background: var(--secondary_color_shade_1);
+}
+
+.contact_address {
+  float: left;
+  width: 270px;
+}
+.contact_address h4 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.contact_address ul li i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.contact_address ul li {
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+.contact_address ul li span {
+  font-weight: 600;
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  padding: 3px;
+  border: 1px solid lightgray;
+}
+
+/* ==============
+default page for user
+===============*/
+.page_box {
+  margin-top: 50px;
+}
+
+.page_left {
+  width: 700px;
+  float: left;
+  margin-right: 30px;
+}
+.page_left p {
+  margin: 10px 0;
+}
+
+/* ==============
+single post
+===============*/
+
+.content {
+  width: 700px;
+  float: left;
+  margin-right: 30px;
+}
+
+.single_post {
+  margin-top: 50px;
+}
+
+/* ==============
+author
+===============*/
+.author_meta img {
+  width: auto;
+}
+
+/* ===========end========== */
